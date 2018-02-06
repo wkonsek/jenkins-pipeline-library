@@ -1,3 +1,6 @@
+#!/usr/bin/groovy
+package slack
+
 void slackNotification(String status){
     String messageBody = "${env.JOB_NAME}, #${env.BUILD_NUMBER}\
  (<${env.RUN_DISPLAY_URL}|open>, <${env.RUN_CHANGES_DISPLAY_URL}|changes>)"
