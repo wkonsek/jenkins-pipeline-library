@@ -25,5 +25,5 @@ void sendNotification(String status){
     else {
         println('possible messages: "start", "ok" or "fail"')
     }
-    slackSend color: color, message: message
+    slackSend color: color, message: message.replace('%2F', '/')
 }
